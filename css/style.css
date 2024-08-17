@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgb(0, 162, 255), rgb(118, 200, 247));
+}
+
+.form {
+  display: flex;
+  width: 80%;
+  height: 80vh;
+  border: 3px solid white;
+  box-shadow: 0 0 10px white;
+}
+.form .logo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/novs.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: white;
+  padding: 1rem;
+}
+.form .formu {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 3rem;
+  font-weight: bold;
+  color: rgb(0, 104, 223);
+  border: 3px solid rgb(38, 159, 207);
+}
+.form .formu h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.form .formu label {
+  margin: 0;
+}
+.form .formu .ip {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form .formu .ip input[type=text], .form .formu .ip input[type=date], .form .formu .ip input[type=email], .form .formu .ip input[type=tel] {
+  border: 1px solid #ccc;
+  width: 90%;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #a1cdff;
+}
+.form .formu .opcao {
+  display: flex;
+  justify-content: space-between;
+}
+.form .formu .opcao p {
+  margin: 10px 3px;
+  font-style: italic;
+  font-weight: bold;
+}
+.form .formu .opcao input[type=radio] {
+  margin: 5px;
+}
+.form .formu .estadocv p {
+  margin: 10px 0;
+}
+.form .formu .estadocv div {
+  display: flex;
+  justify-content: space-between;
+}
+.form .formu .estadocv div .ec {
+  display: block;
+  margin: 10px;
+}
+.form .formu .btn {
+  text-align: center;
+  margin: 0 auto;
+}
+.form .formu input[type=button] {
+  width: 50%;
+  padding: 10px;
+  margin: 0px auto;
+  font-weight: bold;
+  color: white;
+  background-color: #65a8f5;
+  cursor: pointer;
+  border: 1px solid rgb(130, 179, 243);
+}
+.form .formu input[type=button]:hover {
+  background-color: #3484e0;
+}
+
+@media screen and (min-width: 1260px) {
+  .logo {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
